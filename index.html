@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FCC WikiReader</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, minimal-ui" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <h1>Wikipedia <small>article reader</small></h1>
+        </div>
+        <div class="row" id="formRow">
+            <div class="col-md-12">
+                <form id="searchForm" onsubmit="return false">
+                    <div class="input-group">
+                        <input id="userInput" name="userRequest" type="text" class="form-control" placeholder="Enter a search term" />
+                        <span class="input-group-btn"><button id="submitBtn" class="btn btn-success" type="button"><span class="glyphicon glyphicon-search"></span> Fetch Article</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row text-center">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-success" role="button" target="new" title="Fetch a random article">Random Article</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="outputWrapper">
+            <div class="col-md-12">
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
